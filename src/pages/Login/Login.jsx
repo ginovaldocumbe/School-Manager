@@ -7,7 +7,7 @@ import Admin from '../AdminPages/admin/admin';
 import { Link } from "react-router-dom";
 function Login() {
     return (
-        <section >
+        <section className='h-screen overflow-hidden'>
             <div className={styles.MainLog}>
                 <div className={styles.TamanhoImg}>
                     <img className="img-fluid" src={MainLogo} />
