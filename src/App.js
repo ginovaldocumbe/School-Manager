@@ -10,6 +10,7 @@ import Avaliacoes from "./pages/AdminPages/Avaliacoes/Avaliacoes";
 import Seccoes from "./pages/AdminPages/Seccoes/Seccoes";
 import Turmas from "./pages/AdminPages/Turmas/Turmas";
 import SlideBar from "./components/AdminComp/SlideBar/SlideBar";
+import Profess from './pages/P_Professores/inicio/inicio'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 function App() {
   return (
@@ -28,7 +29,7 @@ function App() {
             <Route path="seccoes" element={<Seccoes />} />
             <Route path="turmas" element={<Turmas />} />
           </Route>
-
+          <Route path="/OfProfessores" element={<Profess />} />
           <Route path="*" element={<>Nao encontrado</>} />
           {/* </SlideBar> */}
         </Routes>
