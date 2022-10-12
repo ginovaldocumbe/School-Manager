@@ -1,0 +1,85 @@
+
+.active{
+  background-color: red;
+}
+.SlideBar {
+
+}
+.topo {
+  display: flex;
+  padding-top: 8px;
+  margin-bottom: 50px;
+  flex-direction: row;
+  align-items: center;
+}
+.ImgTop {
+  width: 30px;
+}
+.topText {
+  margin-left: 8px;
+  font-size: 20px;
+  font-weight: bold;
+}
+.Menu {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 00px 0px 0px 10%;
+  background: blueviolet;
+  width: 22px;
+  border-radius: 100%;
+}
+.MenuBtn {
+  font-size: 20px;
+
+  /* position: absolute; */
+}
+.Slide {
+  display: flex;
+  align-items: center;
+  padding-left: 3px;
+  margin-bottom: 15px;
+  height: 33px;
+  border-radius: 7px;
+}
+a{
+  color:rgb(130, 130, 130);
+}
+.Slide:link {
+  text-decoration: none;
+}
+.Slide:hover {
+  background-color: rgb(126, 126, 126);
+  color: white;
+}
+.Slide:visited {
+  background: rgb(69, 187, 219);
+}
+.Icones {
+  margin-right: 6px;
+}
+footer {
+  display: flex;
+  position: absolute;
+  align-items: center;
+  width: 180px;
+  height: 30px;
+  bottom: 10px;
+  padding-left: 3px;
+  border-radius: 5px;
+}
+footer:hover {
+  background-color: red;
+  color: white;
+}
+.FootIcon {
+  /* font-size: 17px; */
+}
+.FootText {
+  margin-left: 6px;
+}
+.RigthSlide {
+  margin: 0;
+  padding: 0;
+}
