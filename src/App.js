@@ -18,7 +18,7 @@ function App() {
       <Router>
 
         <Routes>
-          <Route path="/" element={<Login />} />
+          <Route path="/" element={<Profess />} />
           {/* <SlideBar> */}
           <Route path="/admin" element={<SlideBar />} >
             <Route path="inicio" element={<Inicio />} />
