@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/static/css/main.7501acf3.css",
+    "main.js": "/static/js/main.216a6664.js",
+    "static/media/2.jpg": "/static/media/2.b5b439faa38762990060.jpg",
+    "static/media/1.jpg": "/static/media/1.8b1a5de89edebef90ec8.jpg",
+    "static/media/3.jpg": "/static/media/3.3b76a57215349b0179e1.jpg",
+    "static/media/oluwakemi-solaja-ZN52ZBFkw4Y-unsplash.jpg": "/static/media/oluwakemi-solaja-ZN52ZBFkw4Y-unsplash.24cdc1a81040010b23ef.jpg",
+    "static/media/teacher2.jpg": "/static/media/teacher2.2154cd23432eb5786860.jpg",
+    "static/media/4.jpg": "/static/media/4.b27eceb8d3a97595a1a7.jpg",
+    "static/media/stu.png": "/static/media/stu.2a24599245a9046f6e20.png",
+    "static/media/form.png": "/static/media/form.16478d8529ce90b3406b.png",
+    "static/media/NewLogo2.png": "/static/media/NewLogo2.0e84c4ebd6a99b7f0250.png",
+    "index.html": "/index.html",
+    "main.7501acf3.css.map": "/static/css/main.7501acf3.css.map",
+    "main.216a6664.js.map": "/static/js/main.216a6664.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7501acf3.css",
+    "static/js/main.216a6664.js"
+  ]
+}
