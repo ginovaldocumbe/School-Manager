@@ -12,14 +12,24 @@ import Turmas from "./pages/AdminPages/Turmas/Turmas";
 import SlideBar from "./components/AdminComp/SlideBar/SlideBar";
 import Profess from './pages/P_Professores/inicio/inicio'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
+import Begin from './components/P_Professores/nav/nav'
+import Notas from './pages/P_Professores/notas/notas'
 function App() {
   return (
     <>
       <Router>
 
         <Routes>
-          <Route path="/" element={<Profess />} />
-          {/* <SlideBar> */}
+          <Route path="/" element={<Login />} />
+          <Route path='/Professores' element={<Begin />} >
+            <Route path='inicio' element={<Profess />} />
+            <Route path='notas' element={<Notas />} />
+            {/*  <Route path='turmas' element={}/>
+            <Route path='horario' element={}/>
+            <Route path='presenca' element={}/>
+            <Route path='avaliacoes' element={}/>
+            <Route path='planificacoes' element={}/> */}
+          </Route>
           <Route path="/admin" element={<SlideBar />} >
             <Route path="inicio" element={<Inicio />} />
             <Route path="professores" element={<Professores />} />
@@ -29,7 +39,7 @@ function App() {
             <Route path="seccoes" element={<Seccoes />} />
             <Route path="turmas" element={<Turmas />} />
           </Route>
-          <Route path="/OfProfessores" element={<Profess />} />
+          {/* <Route path="/OfProfessores" element={<Profess />} /> */}
           <Route path="*" element={<>Nao encontrado</>} />
           {/* </SlideBar> */}
         </Routes>

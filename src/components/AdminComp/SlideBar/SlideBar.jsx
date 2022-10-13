@@ -63,7 +63,7 @@ const SlideBar = ({ children }) => {
           <div className={styles.ImgTop}>
             <img src={ImagemMain} className="img-fluid" />
           </div>
-          <span className={styles.topText}>Education Ligth</span>
+          <span className={styles.topText}>Light Education</span>
         </div>
         {/* <div className={styles.Menu}>
           <BiMenuAltLeft className={styles.MenuBtn} />

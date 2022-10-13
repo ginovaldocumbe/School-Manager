@@ -26,7 +26,7 @@ function Login() {
                     <div className={styles.DivEsquecei}>
                         <a href="#x">Esquecei minha senha.</a>
                     </div>
-                    <Link to='/admin/inicio'>   <BtnPrimaria funcao="Entrar" >Entrar</BtnPrimaria></Link>
+                    <Link to='/Professores/inicio'>   <BtnPrimaria funcao="Entrar" >Entrar</BtnPrimaria></Link>
                 </form>
             </div>
             <div className={styles.SlideLog}>
