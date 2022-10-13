@@ -1,6 +1,7 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 import './menu.module.css';
+import styles from './menu.module.css';
 import { IoMdClose } from "react-icons/io";
 import { Professores } from '../../../files/SlideProfessores'
 import { Link, Outlet } from 'react-router-dom'
@@ -14,13 +15,19 @@ function Menu({ setAbrir }, props) {
 
   return (
     <div className="flex flex-col items-center justify-center bg-white w-full h-screen absolute inset-0 md:w-[170px] md:top-8">
-      <div onClick={Abrir} className='bg-white w-fit animation-Abrires fixed right-2 top-3 md:hidden'><IoMdClose /></div>
+      <div className={styles.custom1}>
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" className={styles.custom2} viewBox="0 0 1200 120" preserveAspectRatio="none">
+          <path d="M1200 120L0 16.48 0 0 1200 0 1200 120z" className={styles.custom3}></path>
+        </svg>
+      </div>
 
-      <div className='flex flex-col  justify-center text-left'>
+      <div onClick={Abrir} className='text-red-800 w-fit animation-Abrires fixed right-2 top-3 md:hidden z-30'><IoMdClose /></div>
+
+      <div className='flex flex-col z-10 justify-center text-left'>
         {Professores.map((p) => (
-          <Link onClick={Abrir} to={p.path} activeClassName='active' className="text-black flex flex-row mb-2 text-left items-center">
-            <span className='mr-5 text-[22px]'>{p.icone}</span>
-            <span className=' font-semibold'>{p.nome}</span>
+          <Link onClick={Abrir} to={p.path} activeClassName='active' className="flex flex-row items-center rounded-md text-slate-600 h-10 pl-2 mr-2  hover:bg-gray-200 hover:text-blue-800 visited:bg-sky-800">
+            <span className='mr-5 text-[22px] md:text-base'>{p.icone}</span>
+            <span className=' font-semibold md:text-lg'>{p.nome}</span>
           </Link>
         ))}
       </div>

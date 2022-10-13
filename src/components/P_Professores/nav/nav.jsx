@@ -16,6 +16,7 @@ function Nav() {
   const [navi, setNavi] = useState()
   return (
     <div>
+      
       <div className='text-2xl fixed top-0 text-black flex flex-row justify-between w-full items-ceenter px-2 pt-2 md:px-0'>
         {abrir && (
           <Menu
@@ -29,7 +30,7 @@ function Nav() {
         </div>
         <div className='h-8 w-8 bg-slate-100 rounded-full'></div>
       </div>
-      <Outlet/>
+      <Outlet />
     </div>
   );
 }

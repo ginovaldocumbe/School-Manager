@@ -5,6 +5,7 @@ import { IoIosLogOut } from "react-icons/io";
 import ImagemMain from "../Imagens/NewLogo2.png";
 import { useState } from "react";
 import { SlideData } from '../../../files/SlideData';
+import {SlideDataAdmin} from '../../../files/SlideDataAdmin';
 import Calendar from 'color-calendar';
 import 'color-calendar/dist/css/theme-basic.css';
 import 'color-calendar/dist/css/theme-glass.css';
@@ -35,7 +36,6 @@ const myEvents = [
   },
 ]
 const SlideBar = ({ children }) => {
-
   // new Calendar({
   //   eventsData: myEvents,
   //   id: '#color-calendar',
@@ -56,6 +56,7 @@ const SlideBar = ({ children }) => {
 
   //   },
   // })
+  let tv = false;
   return (
     <section className='flex '>
       <div className='pl-2 w-56 '>
@@ -68,12 +69,22 @@ const SlideBar = ({ children }) => {
         {/* <div className={styles.Menu}>
           <BiMenuAltLeft className={styles.MenuBtn} />
         </div> */}
-        {SlideData.map((route) => (
+        {tv ?
+         SlideData.map((route) => (
           <NavLink activeClassName='active' className='flex flex-row items-center rounded-md text-gray-400 h-10 pl-2 mr-2 hover:bg-gray-200 hover:text-blue-800 visited:bg-sky-800 ' to={route.path} key={route.nome}>
             <div className={styles.Icones}>{route.icone}</div>
             <div className={styles.TextIcon}>{route.nome}</div>
           </NavLink>
-        ))}
+        ))
+          : 
+          SlideDataAdmin.map((route) => (
+            <NavLink activeClassName='active' className='flex flex-row items-center rounded-md text-gray-400 h-10 pl-2 mr-2 hover:bg-gray-200 hover:text-blue-800 visited:bg-sky-800 ' to={route.path} key={route.nome}>
+              <div className={styles.Icones}>{route.icone}</div>
+              <div className={styles.TextIcon}>{route.nome}</div>
+            </NavLink>
+          ))}
+
+      
         <div className="">
           <img src={Imag} className="h-[80%]" />
           <button className="bg-sky-800 text-white py-1 px-4 rounded-md -translate-y-5 translate-x-7">Convidar</button>

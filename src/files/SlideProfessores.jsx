@@ -27,7 +27,7 @@ export const Professores = [
           icone: <BsFillCalendarFill />,
         },
         {
-          path: "presenca",
+          path: "/Professores/presenca",
           nome: "Presencas",
           icone: <FaUserEdit />,
         },

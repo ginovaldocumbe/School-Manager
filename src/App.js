@@ -14,6 +14,7 @@ import Profess from './pages/P_Professores/inicio/inicio'
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 import Begin from './components/P_Professores/nav/nav'
 import Notas from './pages/P_Professores/notas/notas'
+import Pres from './pages/P_Professores/presencas/presencas'
 function App() {
   return (
     <>
@@ -24,9 +25,9 @@ function App() {
           <Route path='/Professores' element={<Begin />} >
             <Route path='inicio' element={<Profess />} />
             <Route path='notas' element={<Notas />} />
+            <Route path='presenca' element={<Pres />} />
             {/*  <Route path='turmas' element={}/>
             <Route path='horario' element={}/>
-            <Route path='presenca' element={}/>
             <Route path='avaliacoes' element={}/>
             <Route path='planificacoes' element={}/> */}
           </Route>
@@ -38,6 +39,10 @@ function App() {
             <Route path="avaliacoes" element={<Avaliacoes />} />
             <Route path="seccoes" element={<Seccoes />} />
             <Route path="turmas" element={<Turmas />} />
+            <Route path="escola" element={<Turmas />} />
+            <Route path="definicoes" element={<Turmas />} />
+            <Route path="perfil" element={<Turmas />} />
+
           </Route>
           {/* <Route path="/OfProfessores" element={<Profess />} /> */}
           <Route path="*" element={<>Nao encontrado</>} />
