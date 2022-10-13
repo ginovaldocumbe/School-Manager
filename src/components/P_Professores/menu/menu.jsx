@@ -18,7 +18,7 @@ function Menu({ setAbrir }, props) {
 
       <div className='flex flex-col  justify-center text-left'>
         {Professores.map((p) => (
-          <Link onClick={Abrir} to={p.path} className="text-black flex flex-row mb-2 text-left items-center">
+          <Link onClick={Abrir} to={p.path} activeClassName='active' className="text-black flex flex-row mb-2 text-left items-center">
             <span className='mr-5 text-[22px]'>{p.icone}</span>
             <span className=' font-semibold'>{p.nome}</span>
           </Link>
