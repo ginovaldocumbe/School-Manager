@@ -27,7 +27,7 @@ function Login() {
                         <a href="#x">Esquecei minha senha.</a>
                     </div>
                     {/* <Link to='/Professores/inicio'>   <BtnPrimaria funcao="Entrar" >Entrar</BtnPrimaria></Link> */}
-                    <Link to='/admin/inicio'>   <BtnPrimaria funcao="Entrar" >Entrar</BtnPrimaria></Link>
+                    <Link to='/admin/inicio'> <BtnPrimaria funcao="Entrar" >Entrar</BtnPrimaria></Link>
 
                 </form>
             </div>
